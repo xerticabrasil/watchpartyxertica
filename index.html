@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Cloud Summit | Xertica.ai</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            celeste: '#239EA6',
+                            magenta: '#C751A3',
+                            violeta: '#5E4694',
+                            marron: '#1A1715',
+                            light: '#FFFEF8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+                    },
+                    letterSpacing: {
+                        'swiss': '-0.02em',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        html {
+            background-color: #1A1715; /* Ensure html background is dark to prevent white bands during scroll/bounce */
+        }
+        
+        body {
+            background-color: #1A1715;
+            color: #FFFEF8;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .brutalist-border {
+            border: 4px solid #FFFEF8;
+        }
+        
+        .brutalist-shadow-celeste {
+            box-shadow: 12px 12px 0px 0px #239EA6;
+        }
+        
+        .brutalist-shadow-magenta {
+            box-shadow: 12px 12px 0px 0px #C751A3;
+        }
+
+        /* Padrão de Grade Tecnológica para o Bloco Geométrico */
+        .tech-grid {
+            background-image: 
+                linear-gradient(to right, rgba(255, 254, 248, 0.1) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 254, 248, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+
+    <!-- Navegação -->
+    <nav class="w-full py-6 absolute top-0 z-50 border-b-2 border-brand-light/20 bg-brand-marron/90 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+            <img src="https://i.imgur.com/cVseTqH.jpeg" alt="Xertica.ai" class="h-8 md:h-10" onerror="this.src='https://placehold.co/100x40/1A1715/239EA6?text=Xertica'">
+            <div class="hidden md:flex gap-6 text-brand-light/80 font-bold tracking-swiss uppercase text-sm">
+                <a href="#stand" class="hover:text-brand-celeste transition-colors">Nosso Stand</a>
+                <a href="#watch-party" class="hover:text-brand-magenta transition-colors">Watch Party</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow pt-24 md:pt-0 flex items-center min-h-[90vh] relative overflow-hidden bg-brand-marron">
+        <div class="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center px-6 md:px-12 z-10 py-12 lg:py-0">
+            
+            <!-- Conteúdo Esquerda -->
+            <div class="w-full lg:w-[60%] flex flex-col justify-center pr-0 lg:pr-12">
+                
+                <div class="inline-flex items-center gap-3 px-4 py-2 bg-brand-celeste text-brand-light border-2 border-brand-light shadow-[4px_4px_0px_0px_#FFFEF8] mb-8 w-max">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <span class="text-[14px] font-bold uppercase tracking-swiss font-display">23 e 24 de Setembro de 2026 • São Paulo, SP</span>
+                </div>
+
+                <h1 class="text-[56px] md:text-[80px] font-black text-brand-light leading-[1.05] tracking-swiss font-display mb-6">
+                    GOOGLE CLOUD SUMMIT.
+                </h1>
+
+                <p class="text-[20px] md:text-[24px] text-brand-light/80 font-normal leading-[1.4] font-sans mb-4 max-w-2xl border-l-4 border-brand-magenta pl-6">
+                    A Xertica Brasil vai estar no palco em setembro. Vamos apresentar como estamos acelerando a transformação digital do setor público brasileiro — de tribunais a ministérios públicos.
+                </p>
+                
+                <p class="text-[18px] text-brand-light/70 font-sans mb-10 max-w-2xl pl-7">
+                    Foco total em <strong>IA aplicada, Google Workspace e Gemini Enterprise</strong>.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <!-- Substitua o href pelo link oficial de inscrição do Google Summit -->
+                    <a href="#stand" class="bg-brand-celeste hover:bg-[#1E8A91] text-brand-marron font-bold uppercase tracking-swiss px-8 py-4 border-2 border-transparent transition-colors">
+                        Inscreva-se Presencialmente (SP)
+                    </a>
+                    <a href="#watch-party" class="bg-transparent hover:bg-brand-light/10 text-brand-light font-bold uppercase tracking-swiss px-8 py-4 border-2 border-brand-light transition-colors">
+                        Watch Party (BSB)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bloco Geométrico Estruturado (Direita) -->
+            <div class="w-full lg:w-[40%] flex justify-center lg:justify-end mt-12 lg:mt-0">
+                <div class="relative w-[320px] h-[320px] md:w-[400px] md:h-[400px]">
+                    <!-- Quadrado Base (Magenta) -->
+                    <div class="absolute bottom-0 right-0 w-[85%] h-[85%] bg-brand-magenta brutalist-border tech-grid opacity-80"></div>
+                    <!-- Quadrado Sobreposto (Celeste) com offset rigoroso -->
+                    <div class="absolute top-0 left-0 w-[85%] h-[85%] bg-brand-celeste brutalist-border tech-grid flex items-end p-6 z-10 transition-transform hover:-translate-y-2 hover:-translate-x-2 duration-300">
+                        <div class="bg-brand-marron border-2 border-brand-light p-4 shadow-[4px_4px_0px_0px_#FFFEF8]">
+                            <p class="font-display font-bold text-brand-light text-xl uppercase tracking-swiss">GCP Summit 26</p>
+                            <p class="font-sans text-brand-light/70 text-sm">Watch Party Oficial</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Seção: O Stand -->
+    <section id="stand" class="w-full py-24 bg-brand-violeta relative border-t-2 border-brand-light/10">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <div class="inline-block px-4 py-1.5 bg-brand-marron text-brand-light border-2 border-brand-light mb-6 font-bold uppercase tracking-swiss text-sm shadow-[4px_4px_0px_0px_#FFFEF8]">
+                    No Palco e No Stand
+                </div>
+                <h2 class="text-[40px] md:text-[56px] font-black leading-[1.1] tracking-swiss font-display mb-6 text-brand-light">
+                    O futuro do Setor Público com a <span class="text-brand-celeste">Xertica</span>
+                </h2>
+                <p class="text-[20px] font-sans text-brand-light/90 leading-[1.6] mb-8">
+                    Se você trabalha com tecnologia, dados ou inovação no governo, esse é o lugar para entender o que vem a seguir. Inscreva-se para participar presencialmente e ver nossas soluções operando na prática.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center">
+                <div class="bg-brand-marron border-4 border-brand-light p-8 md:p-12 w-full max-w-lg brutalist-shadow-magenta transform md:rotate-2 hover:rotate-0 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-brand-light mb-4 font-display uppercase border-b-2 border-brand-light/20 pb-4">Nossos pilares no evento:</h3>
+                    <ul class="space-y-4 text-brand-light/80 font-sans">
+                        <li class="flex items-center gap-3">
+                            <span class="text-brand-magenta font-bold text-xl">→</span> 
+                            <span>Foco extremo em <strong>IA aplicada</strong> no governo.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-brand-magenta font-bold text-xl">→</span> 
+                            <span>Modernização via <strong>Google Workspace</strong>.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-brand-magenta font-bold text-xl">→</span> 
+                            <span>Inovação e produtividade com <strong>Gemini Enterprise</strong>.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Watch Party (Captura) -->
+    <section id="watch-party" class="w-full py-24 bg-[#1A1715] relative border-t-2 border-brand-light/10">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row gap-16 lg:items-start items-center">
+            
+            <!-- Conteúdo da Esquerda -->
+            <div class="w-full lg:w-1/2 flex flex-col lg:pt-8">
+                <!-- Tag Lista de Espera -->
+                <div class="inline-block border border-brand-magenta rounded-full px-4 py-1 w-max mb-6">
+                    <span class="text-brand-magenta text-xs font-bold uppercase tracking-widest">24/09 • 09:00 às 12:00 • Brasília</span>
+                </div>
+                
+                <!-- Título Novo -->
+                <h2 class="text-[32px] md:text-[40px] font-black leading-[1.1] tracking-swiss font-display mb-6 text-brand-light">
+                    Não vai estar em SP? Junte-se à nossa Watch Party em Brasília.
+                </h2>
+                
+                <!-- Parágrafo Introdutório -->
+                <p class="text-[18px] md:text-[20px] font-sans text-brand-light/90 leading-[1.6] mb-4">
+                    Organizamos uma Watch Party em Brasília, simultânea ao evento, para acompanhar tudo junto com o time Xertica local.
+                </p>
+                
+                <!-- Parágrafo Elaborado -->
+                <p class="text-[16px] md:text-[18px] font-sans text-brand-light/70 leading-[1.6]">
+                    Preparamos um ambiente focado, com direito a networking e muita discussão direcionada sobre o que os anúncios do evento significam para a realidade e os desafios do setor público. As vagas para o espaço físico da transmissão são limitadas.
+                </p>
+            </div>
+            
+            <!-- Formulário da Direita (Card Branco/Escuro) -->
+            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end relative mt-12 lg:mt-0">
+                <!-- Fundo Offset Magenta (Arredondado) -->
+                <div class="absolute inset-0 bg-[#C751A3] rounded-3xl translate-x-4 translate-y-4"></div>
+                
+                <!-- Card Principal do Formulário -->
+                <div class="bg-[#1A1715] border-2 border-brand-light rounded-3xl p-8 md:p-10 w-full max-w-md relative z-10">
+                    
+                    <!-- Destaque Apresentação Oficial -->
+                    <div class="bg-gradient-to-b from-[#2A2E37] to-[#1C1F26] rounded-2xl p-8 mb-10 flex flex-col items-center justify-center border border-[#3A3E47] relative overflow-hidden shadow-2xl">
+                        <!-- Efeito de Brilho Fundo -->
+                        <div class="absolute top-0 inset-x-0 h-32 bg-brand-light/5 blur-3xl"></div>
+                        
+                        <div class="w-16 h-16 rounded-full border-2 border-[#C751A3] flex items-center justify-center mb-6 relative z-10 bg-[#1A1715]">
+                            <svg class="w-8 h-8 text-[#C751A3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-brand-light mb-6 font-display relative z-10 text-center">Watch Party</h3>
+                        <div class="bg-[#5E4694] text-brand-light text-xs font-bold px-4 py-1.5 rounded-full tracking-widest relative z-10">
+                            VAGAS LIMITADAS
+                        </div>
+                    </div>
+                    
+                    <p class="text-brand-light font-bold mb-6 text-center lg:text-left">
+                        Garanta sua vaga na lista de espera
+                    </p>
+                    
+                    <div id="form-container">
+                        <script>var formSubmitted = false;</script>
+                        <!-- Iframe invisível para impedir redirecionamento -->
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(formSubmitted){ document.getElementById('form-container').style.display='none'; document.getElementById('success-message').style.display='flex'; }"></iframe>
+                        
+                        <!-- Formulário conectado ao Google Forms -->
+                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdPn3fdmXLpujTi4Np-6SpVXKPDOFjO8vOr3TTDN9BVuXf0vw/formResponse" method="POST" target="hidden_iframe" onsubmit="formSubmitted=true;" class="flex flex-col gap-4">
+                            <!-- entry.2097505433 = Nome -->
+                            <input type="text" name="entry.2097505433" required placeholder="Seu Nome Completo *" class="w-full bg-transparent border border-brand-light/30 rounded-lg px-4 py-4 text-brand-light placeholder-brand-light/40 focus:outline-none focus:border-brand-celeste transition-colors">
+                            
+                            <!-- entry.1250047595 = E-mail -->
+                            <input type="email" name="entry.1250047595" required placeholder="E-mail Profissional *" class="w-full bg-transparent border border-brand-light/30 rounded-lg px-4 py-4 text-brand-light placeholder-brand-light/40 focus:outline-none focus:border-brand-celeste transition-colors">
+                            
+                            <!-- entry.1931883579 = Telefone/WhatsApp -->
+                            <input type="tel" name="entry.1931883579" required placeholder="Telefone / WhatsApp *" class="w-full bg-transparent border border-brand-light/30 rounded-lg px-4 py-4 text-brand-light placeholder-brand-light/40 focus:outline-none focus:border-brand-celeste transition-colors">
+                            
+                            <div class="mt-2 text-center">
+                                <p class="text-brand-light/50 text-xs mb-3">* Todos os campos são obrigatórios</p>
+                                <button type="submit" class="w-full bg-brand-celeste hover:bg-[#1E8A91] text-[#1A1715] font-black text-lg py-4 rounded-lg transition-colors uppercase tracking-wider cursor-pointer">
+                                    ENTRAR NA LISTA
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Mensagem de Sucesso (Oculta por padrão) -->
+                    <div id="success-message" style="display:none;" class="text-center py-10 flex-col items-center justify-center">
+                        <svg class="w-16 h-16 text-brand-celeste mb-4 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h4 class="text-2xl font-bold text-brand-light mb-2 font-display">Nome Confirmado!</h4>
+                        <p class="text-brand-light/80 font-sans mb-4">Você está na nossa lista de espera da Watch Party.</p>
+                        <p class="text-brand-light/50 font-sans text-sm">Entraremos em contato em breve com o link oficial e os próximos passos.</p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#110f0e] border-t-2 border-brand-light/10 py-12 text-center relative z-20">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
+            <img src="https://i.imgur.com/cVseTqH.jpeg" alt="Xertica.ai" class="h-8 mb-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300" onerror="this.src='https://placehold.co/100x40/110f0e/239EA6?text=Xertica'">
+            <p class="text-brand-light/40 text-[14px] font-sans">
+                © 2026 Xertica.ai. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
